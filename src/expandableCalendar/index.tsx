@@ -159,7 +159,7 @@ class ExpandableCalendar extends Component<ExpandableCalendarProps, State> {
   constructor(props: ExpandableCalendarProps) {
     super(props);
 
-    this.closedHeight = CLOSED_HEIGHT + (props.hideKnob ? 0 : KNOB_CONTAINER_HEIGHT);
+    this.closedHeight = CLOSED_HEIGHT + (props.hideKnob ? -4 : KNOB_CONTAINER_HEIGHT);
     this.numberOfWeeks = this.getNumberOfWeeksInMonth(new XDate(this.props.context.date));
     this.openHeight = this.getOpenHeight();
 
